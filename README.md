@@ -42,17 +42,51 @@ Detects reflected user input and basic injection contexts in HTML responses to a
 - Auto-exploit vulnerabilities
 
 ---
+⚠️ Reflection ≠ exploitable XSS
+Always test manually in browser.
 
+🔍 How It Works (Simplified)
+
+Crawls target URLs (same domain)
+
+Extracts URL & form parameters
+
+Injects a unique reflection marker
+
+Detects reflection context using regex
+
+Generates safe context-specific payloads
+
+Saves findings to a report
+
+🔐 Legal & Ethical Warning
+
+🚨 Use ONLY on websites you own or have explicit permission to test.
+Unauthorized testing is illegal.
+The author is not responsible for misuse.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+
+Sriman Kundu
+🔗 GitHub: https://github.com/sriman-git09
+
+Cybersecurity  | Ethical hacking learner | Bug bounty enthusiast
 ## ⚙️ Requirements
 
 - Python **3.8+**
 - Internet connection
 - Permission to test the target
-
+Results are saved automatically to:
+report.txt
 ### Python Libraries
 ```bash
 pip3 install requests beautifulsoup4
 git clone https://github.com/sriman-git09/xss-reflection-detector.git
 cd xss-reflection-detector
 chmod +x xss-reflection-detector.py
-▶️ Usage
+python3 xss-reflection-detector.py
+
