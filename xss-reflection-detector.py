@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Automated XSS Discovery Scanner (Bug-Bounty Safe)
-
+GITHUB : https://github.com/sriman-git09
 Author: Sriman Kundu
 Purpose: Automated reflection + context discovery for XSS hunting
 WARNING: Use ONLY on websites you own or have permission to test.
